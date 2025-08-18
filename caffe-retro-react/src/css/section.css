@@ -20,6 +20,7 @@
   color: darkred;
 
   text-align: center;
+  text-transform: capitalize;
 }
 
 section.section-container {
@@ -32,15 +33,18 @@ section.section-container {
   justify-content: center;
 }
 
-.section-title {
-  font-size: 3rem;
-}
+/* Responsivity for smartphone screens*/
+@media screen and (max-width: 450px) {
+  h1.section-title {
+    font-size: 3rem;
+  }
 
-section.section-container {
-  width: 80%;
-}
+  section.section-container {
+    width: 80%;
+  }
 
-section .text-box.black {
-  padding: 0;
-  width: 100%;
+  section .text-box.black {
+    padding: 0;
+    width: 100%;
+  }
 }
