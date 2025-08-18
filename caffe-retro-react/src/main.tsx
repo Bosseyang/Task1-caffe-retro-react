@@ -8,7 +8,13 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Header />
     <main>
-      <Section />
+      <Section id="hot" className="hot-section section" imgSrc="/hot.jpg" />
+      <Section
+        id="juicy"
+        className="juicy-section section"
+        imgSrc="/juicy.jpg"
+      />
+      <Section id="cosy" className="cosy-section section" imgSrc="/cosy.jpg" />
     </main>
   </StrictMode>
 );
