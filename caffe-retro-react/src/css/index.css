@@ -1,3 +1,5 @@
+@import url("./section.css");
+
 * {
   color: lightgray;
   font-family: "Poiret One", sans-serif;
@@ -34,22 +36,6 @@ html {
   color: white;
 }
 
-.section {
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  box-sizing: content-box;
-  border-bottom: 1rem solid darkred;
-}
-
-.section:last-child {
-  border-bottom: none;
-}
 
 img.background-image {
   object-fit: cover;
@@ -60,13 +46,7 @@ img.background-image {
   z-index: -1;
 }
 
-.section-title {
-  font-family: "Spirax", sans-serif;
-  font-size: 4rem;
-  color: darkred;
 
-  text-align: center;
-}
 
 /* .hot-section {
   background-image: url("./assets/hot.jpg");
@@ -80,15 +60,7 @@ img.background-image {
   background-image: url("./assets/cosy.jpg");
 } */
 
-section.section-container {
-  gap: 1rem;
-  width: 70%;
 
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
-}
 
 .text-box {
   color: white;
@@ -141,18 +113,7 @@ table tr td:nth-child(even) {
     font-size: 1.2rem;
   }
 
-  .section-title {
-    font-size: 3rem;
-  }
-
-  section.section-container {
-    width: 80%;
-  }
-
-  section .text-box.black {
-    padding: 0;
-    width: 100%;
-  }
+  
 
   .text-box.red {
     padding: 0;
