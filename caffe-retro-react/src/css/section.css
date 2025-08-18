@@ -1,0 +1,46 @@
+.section {
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: content-box;
+  border-bottom: 1rem solid darkred;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+.section-title {
+  font-family: "Spirax", sans-serif;
+  font-size: 4rem;
+  color: darkred;
+
+  text-align: center;
+}
+
+section.section-container {
+  gap: 1rem;
+  width: 70%;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 3rem;
+}
+
+section.section-container {
+  width: 80%;
+}
+
+section .text-box.black {
+  padding: 0;
+  width: 100%;
+}
