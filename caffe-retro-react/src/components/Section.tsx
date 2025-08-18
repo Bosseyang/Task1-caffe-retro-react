@@ -1,20 +1,26 @@
 import type { ReactElement } from "react";
+import Textbox from "./Textbox";
 
-interface ISection {
-  image: string;
-  h1: string;
-  section: string;
+interface ISectionProps {
+  className: string;
+  id: string;
+  imgSrc: string;
 }
 
-export default function Section(): ReactElement {
+export default function Section(props: ISectionProps): ReactElement {
   return (
-    <section className="hot-section section" id="hot">
+    <section className={props.className} id={props.id}>
       <img
-        src="../../public/hot.jpg"
-        alt="Hot section background image"
-        className="background-image Hot-section"
+        src={props.imgSrc}
+        alt="${props.id} section background image"
+        className="background-image"
       />
-      <section className="section-container"></section>
+      <section className="section-container">
+        <h1 className="section-title">{props.id}</h1>
+        <Textbox attribute="red"></Textbox>
+        <Textbox attribute="bottom"></Textbox>
+        <Textbox attribute="black"></Textbox>
+      </section>
     </section>
   );
 }
