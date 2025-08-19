@@ -1,0 +1,40 @@
+.text-box {
+  color: white;
+  background-color: rgb(139, 0, 0, 0.75);
+
+  width: 75%;
+  height: auto;
+  padding: 0.8rem;
+}
+
+.text-box.bottom {
+  align-self: flex-end;
+}
+
+.text-box.black {
+  background-color: rgb(0, 0, 0, 0.75);
+  padding: 1rem 3rem;
+  align-self: center;
+}
+
+/* Responsivity for smartphone screens*/
+@media screen and (max-width: 450px) {
+  .text-box.red {
+    padding: 0;
+    width: 100%;
+    align-self: center;
+  }
+
+  .text-box.bottom {
+    display: none;
+  }
+}
+
+/* responsivity for tablets */
+@media screen and (max-width: 768px) {
+  .text-box,
+  .text-box.bottom {
+    align-self: center;
+    width: 100%;
+  }
+}
