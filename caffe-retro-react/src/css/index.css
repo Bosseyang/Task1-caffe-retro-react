@@ -1,4 +1,5 @@
 @import url("./section.css");
+@import url("./table.css");
 @import url("./textbox.css");
 @import url("./header.css");
 
@@ -45,17 +46,6 @@ img.background-image {
 
 
 
-.table {
-  width: 100%;
-}
-
-.table tr td {
-  text-align: start;
-}
-
-table tr td:nth-child(even) {
-  text-align: end;
-}
 
 /* Responsivity for smartphone screens*/
 
@@ -72,14 +62,5 @@ table tr td:nth-child(even) {
   
 
 
-  .table {
-    padding: 0.5rem;
-  }
-
-  .table tr td {
-    padding: 0;
-    font-size: 1rem;
-  }
-}
 
 }
