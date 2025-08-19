@@ -1,0 +1,32 @@
+.nav {
+  background-color: rgb(33, 21, 26, 0.75);
+  overflow: hidden;
+  width: 100%;
+  padding: 0.7rem 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav a {
+  font-family: "Spirax", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Responsivity for smartphone screens*/
+@media screen and (max-width: 450px) {
+  .nav {
+    gap: 1.5rem;
+    padding: 0.65rem 0;
+  }
+
+  .nav a {
+    font-size: 1.2rem;
+  }
+}
