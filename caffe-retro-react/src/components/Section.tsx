@@ -1,16 +1,19 @@
 import type { ReactElement } from "react";
 import type { ISectionText } from "../assets/SectionText";
 import Textbox from "./Textbox";
+import TabelComp from "./TableComp";
+import type { TableData } from "../assets/TableData";
 
 interface ISectionProps {
   className: string;
   id: string;
   imgSrc: string;
   sectionText: ISectionText;
+  tableData?: TableData;
 }
 
 export default function Section(props: ISectionProps): ReactElement {
-  const { className, id, imgSrc, sectionText } = props;
+  const { className, id, imgSrc, sectionText, tableData } = props;
   return (
     <section className={className} id={id}>
       <img
@@ -22,10 +25,7 @@ export default function Section(props: ISectionProps): ReactElement {
         <h1 className="section-title">{id}</h1>
         <Textbox attribute="red" text={sectionText.text1} />
         <Textbox attribute="red bottom" text={sectionText.text2} />
-        <Textbox
-          attribute="black"
-          text="We give you that perfect cup every time."
-        />
+        <TabelComp data={tableData} />
       </section>
     </section>
   );
