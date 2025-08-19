@@ -18,37 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-img.background-image {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  z-index: -1;
-}
-
-
-
-/* .hot-section {
-  background-image: url("./assets/hot.jpg");
-  border-bottom: 1rem solid darkred;
-}
-.juicy-section {
-  background-image: url("./assets/juicy.jpg");
-  border-bottom: 1rem solid darkred;
-} */
-/* .cosy-section {
-  background-image: url("./assets/cosy.jpg");
-} */
-
-
-
-
-
 /* Responsivity for smartphone screens*/
-
 @media screen and (max-width: 450px) {
   * {
     font-size: 1.05rem;
@@ -57,10 +27,4 @@ img.background-image {
   p {
     padding: 0.5rem;
   }
-
-
-  
-
-
-
 }
